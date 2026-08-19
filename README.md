@@ -276,7 +276,7 @@ The analysis highlighted seasonal sales patterns, differences between product sa
 
 ## Reproducibility
 
-##3 Development Environment
+### Development Environment
 
 This project was developed and tested using the following environment:
 
