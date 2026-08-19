@@ -10,8 +10,7 @@
   <a href="#analysis">Analysis</a> •
   <a href="#insights">Insights</a> •
   <a href="#recommendations">Recommendations</a> •
-  <a href="#reproducibility">Reproducibility</a> •
-  <a href="#about">About</a>
+  <a href="#reproducibility">Reproducibility</a> 
 </p>
 
 > **Academic Project — STQD6324 Data Management**
@@ -75,10 +74,8 @@ online-retail-business-intelligence
     ├── Monthly trend
     ├── Top products by quantity sold
     ├── Top customers by spending
-    └── top countries by revenue
+    └── Top countries by revenue
 ```
-
----
 
 ## Dataset
 
@@ -112,12 +109,10 @@ The dataset contains 1,067,371 transaction records and 8 variables with detailed
 | Item | Value |
 |---|---|
 | Source | UCI Machine Learning Repository |
-| Time Period | December 2009 – December 2011 |
+| Time Period | 1 December 2009 – 9 December 2011 |
 | Total Records | 1,067,371 |
 | Variables | 8 |
 | Industry | E-commerce / Online Retail |
-
----
 
 ## Data Cleaning
 
@@ -141,9 +136,7 @@ The cleaning process reduced the dataset from 1,067,371 records to 779,425 recor
 
 *<img width="1249" height="718" alt="Image" src="https://github.com/user-attachments/assets/9c0d3371-515e-445f-8cc6-2ec0a731c584" />*
 
----
-
-# Analysis
+## Analysis
 
 The cleaned dataset was imported into Apache Hive for business-oriented analytical querying. The query results were exported as CSV files and used to develop an interactive R Markdown dashboard.
 
@@ -155,85 +148,53 @@ The cleaned dataset was imported into Apache Hive for business-oriented analytic
 
 *<img width="1339" height="361" alt="Image" src="https://github.com/user-attachments/assets/d9115b49-3b83-46ed-9f46-0e39c5fe3bc9" />*
 
----
-
-## Dashboard Overview
+### Dashboard Overview
 
 *<img width="1920" height="878" alt="Image" src="https://github.com/user-attachments/assets/6dde1881-b0e2-4d31-90f6-3c8aa96c094a" />*
 
 The dashboard brings together key business performance indicators, sales trends, product performance, customer spending and geographic revenue.
 
----
-
 ### Business KPIs
 
 *<img width="1920" height="264" alt="Image" src="https://github.com/user-attachments/assets/b917c93c-eadf-4670-a540-297341811ad8" />*
 
-### Findings
-
-The business generated approximately **£17.37 million** in total revenue from **36,969 completed orders**, involving **5,878 customers** and **4,631 products**. The average order value was **£469.98**, meaning the average completed order generated approximately £470 in revenue.
-
----
+**Finding:** The business generated approximately **£17.37 million** in total revenue from **36,969 orders**, involving **5,878 customers** and **4,631 products**. The average order value was **£469.98**, meaning the average completed order generated approximately £470 in revenue.
 
 ### Monthly Revenue Trend
 
 *<img width="603" height="474" alt="Image" src="https://github.com/user-attachments/assets/12a16540-4c68-4af9-886f-17ac5b103ba1" />*
 
-### Findings
-
-Monthly revenue fluctuated throughout the two-year period, with revenue consistently peaking in November. Revenue reached **£1.17 million in November 2010** and **£1.16 million in November 2011**, before declining in December. The December figures should be interpreted with caution because the dataset only contains transactions up to **9 December 2011**.
-
----
+**Finding:** Monthly revenue fluctuated throughout the two-year period, with revenue consistently peaking in November. Revenue reached **£1.17 million in November 2010** and **£1.16 million in November 2011**, before declining in December. The December figures should be interpreted with caution because the dataset only contains transactions up to **9 December 2011**.
 
 ### Monthly Order Trend
 
 *<img width="603" height="474" alt="Image" src="https://github.com/user-attachments/assets/2c05b05e-7d1d-4a38-98e3-c8f0b65e4745" />*
 
-### Findings
-
-The number of completed orders followed a similar pattern to monthly revenue. Order volume increased towards the end of each year and reached its highest level in **November 2011 (2,657 orders)**. The similar movement between order volume and revenue suggests that higher order activity was an important contributor to the increase in revenue.
-
----
+**Finding:** The number of orders followed a similar pattern to monthly revenue. Order volume increased towards the end of each year and reached its highest level in **November 2011 (2,657 orders)**. The similar movement between order volume and revenue suggests that higher order activity was an important contributor to the increase in revenue.
 
 ### Top Products by Revenue
 
 *<img width="603" height="474" alt="Image" src="https://github.com/user-attachments/assets/89924349-72d5-46aa-a30c-6702751330b9" />*
 
-### Findings
-
-The **REGENCY CAKESTAND 3 TIER** generated the highest total revenue, followed by **WHITE HANGING HEART T-LIGHT HOLDER** and **PAPER CRAFT, LITTLE BIRDIE**. These products were among the largest contributors to the retailer's total revenue during the period analyzed.
-
----
+**Finding:** The **REGENCY CAKESTAND 3 TIER** generated the highest total revenue, followed by **WHITE HANGING HEART T-LIGHT HOLDER** and **PAPER CRAFT, LITTLE BIRDIE**. These products were among the largest contributors to the retailer's total revenue during the period analyzed.
 
 ### Top Products by Quantity Sold
 
 *<img width="603" height="474" alt="Image" src="https://github.com/user-attachments/assets/fc4587c3-6f96-4031-9210-ebb428b22e37" />*
 
-### Findings
-
-The **WORLD WAR 2 GLIDERS ASSTD DESIGNS** recorded the highest sales quantity, followed by **WHITE HANGING HEART T-LIGHT HOLDER** and **PAPER CRAFT, LITTLE BIRDIE**. Comparing quantity sold with revenue shows that the products with the highest sales volume were not necessarily the highest revenue generators, highlighting the influence of product price on total revenue.
-
----
+**Finding:** The **WORLD WAR 2 GLIDERS ASSTD DESIGNS** recorded the highest sales quantity, followed by **WHITE HANGING HEART T-LIGHT HOLDER** and **PAPER CRAFT, LITTLE BIRDIE**. Comparing quantity sold with revenue shows that the products with the highest sales volume were not necessarily the highest revenue generators, highlighting the influence of product price on total revenue.
 
 ### Top Customers by Spending
 
 *<img width="603" height="474" alt="Image" src="https://github.com/user-attachments/assets/488db80c-3961-4e56-b296-91b6fa45d401" />*
 
-### Findings
-
-Customer **18102** recorded the highest total spending at approximately **£580,987**, followed by customers **14646 (£528,603)** and **14156 (£313,438)**. The large difference between the top customers and the rest of the customer base suggests that a small group of customers had substantially higher spending than others.
-
----
+**Finding:** Customer **18102** recorded the highest total spending at approximately **£580,987**, followed by customers **14646 (£528,603)** and **14156 (£313,438)**. The large difference between the top customers and the rest of the customer base suggests that a small group of customers had substantially higher spending than others.
 
 ### Revenue by Country
 
 *<img width="603" height="474" alt="Image" src="https://github.com/user-attachments/assets/916f4e3b-074c-44c5-96af-cafd836f07fa" />*
 
-### Findings
-
-The **United Kingdom** generated the largest share of revenue at approximately **£14.39 million**, substantially higher than any other country. Among the international markets, **EIRE, the Netherlands, Germany and France** generated the highest revenue outside the UK.
-
----
+**Finding:** The **United Kingdom** generated the largest share of revenue at approximately **£14.39 million**, substantially higher than any other country. Among the international markets, **EIRE, the Netherlands, Germany and France** generated the highest revenue outside the UK.
 
 ## Insights
 
@@ -255,8 +216,6 @@ The customer spending analysis showed that a small group of customers had substa
 
 The United Kingdom generated the majority of revenue, while EIRE, the Netherlands, Germany and France were the largest international contributors. These markets could be considered when evaluating opportunities for future international marketing and expansion.
 
----
-
 ## Recommendations
 
 - Increase inventory planning ahead of the October–November peak sales period.
@@ -264,15 +223,11 @@ The United Kingdom generated the majority of revenue, while EIRE, the Netherland
 - Consider loyalty programmes and personalised promotions for high-value customers.
 - Evaluate marketing opportunities in international markets such as EIRE, Germany and France.
 
----
-
 ## Conclusion
 
 This project demonstrates how a large transactional dataset can be transformed into business insights through a Business Intelligence workflow. Apache Pig and Apache Hive were used for data cleaning and analysis, while R Markdown was used to develop an interactive dashboard.
 
 The analysis highlighted seasonal sales patterns, differences between product sales volume and revenue, high-value customers and the geographic distribution of revenue. These findings can support decisions around inventory planning, customer retention, product management and market strategy.
-
----
 
 ## Reproducibility
 
@@ -289,8 +244,6 @@ This project was developed and tested using the following environment:
 | R | 4.5.1 |
 | R Markdown | 2.31 |
 
----
-
 ### Python Libraries
 
 The Python workflow used Pandas for initial dataset exploration and conversion from XLSX to TSV format.
@@ -298,8 +251,6 @@ The Python workflow used Pandas for initial dataset exploration and conversion f
 ```python
 import pandas as pd
 ```
-
----
 
 ### R Packages
 
@@ -315,7 +266,6 @@ library(readr)
 library(scales)
 library(shiny)
 ```
----
 
 ### Running the Project
 
@@ -336,14 +286,10 @@ To reproduce the analysis and dashboard:
 7. Export the Hive query results as CSV files and place them in the `dashboard/` folder.
 
 8. Open `Dashboard.Rmd` in RStudio and knit the file to generate the interactive dashboard.
-
----
-
+   
 > [!NOTE]
 > - All outputs in this repository were generated from the Apache Pig scripts, Apache Hive queries and R Markdown dashboard.
 > - The dashboard was developed using R Markdown, Flexdashboard and Plotly.
-
----
 
 ### Repository Structure
 
@@ -377,12 +323,10 @@ Online-Retail-Business-Intelligence/
 │   ├── Top_Products_by_Revenue.png
 │   ├── Top_Products_by_Quantity_Sold.png
 │   ├── Top_Customers_by_Spending.png
-│   └──Top_Countries_by_Revenue.png
+│   └── Top_Countries_by_Revenue.png
 │
 └── README.md
 ```
-
----
 
 ## About
 
