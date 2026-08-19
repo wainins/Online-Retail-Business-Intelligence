@@ -158,7 +158,7 @@ The dashboard brings together key business performance indicators, sales trends,
 
 *<img width="1920" height="264" alt="Image" src="https://github.com/user-attachments/assets/b917c93c-eadf-4670-a540-297341811ad8" />*
 
-**Finding:** The business generated approximately **£17.37 million** in total revenue from **36,969 orders**, involving **5,878 customers** and **4,631 products**. The average order value was **£469.98**, meaning the average completed order generated approximately £470 in revenue.
+**Finding:** The business generated approximately **£17.37 million** in total revenue from **36,969 orders**, involving **5,878 customers** and **4,631 products**. The average order value was **£469.98**, meaning the average order generated approximately £470 in revenue.
 
 ### Monthly Revenue Trend
 
