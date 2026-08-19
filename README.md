@@ -328,6 +328,10 @@ Online-Retail-Business-Intelligence/
 └── README.md
 ```
 
-## About
+<br> 
 
-This project was completed as part of the **STQD6324 Data Management** course at Universiti Kebangsaan Malaysia.
+---
+
+<p align="center">
+  <i>This project was completed as part of the STQD6324 Data Management course at Universiti Kebangsaan Malaysia.</i>
+</p>
